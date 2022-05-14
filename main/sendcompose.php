@@ -1,6 +1,6 @@
 <?php
 session_start();
-//error_reporting(1);
+error_reporting(1);
 include_once('connection.php');
 
 if(!isset($_SESSION['sid']))

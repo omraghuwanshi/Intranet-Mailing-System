@@ -207,7 +207,7 @@ $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="inbox.php">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
@@ -384,7 +384,7 @@ $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
                                             <div class="card-block">
                                                 <div class="d-flex m-b-40">
                                                     <div>
-                                                        <a href="javascript:void(0)"><img src="<?php echo 'userImages/'.$un.'/'.$simg; ?>" alt="user" width="100" class="img-square" /></a>
+                                                        <a href="javascript:void(0)"><img src="<?php echo 'userImages/'.$un.'/'.$simg; ?>" alt="user" width="60" class="img-square" /></a>
 
                                                     </div>
                                                     <div class="p-l-10">
@@ -415,7 +415,7 @@ $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
                                                     
                                                 </div>
                                                 <div class="b-all m-t-20 p-20">
-                                                    <p class="p-b-20">click here to <a href="<?php echo 'compose.php?id=  '.rawurlencode($smail)."&sub=@reply to : ".rawurlencode($row['sub']) ; ?> ">Reply</a> or <a href="<?php echo 'compose.php?sub=  '.rawurlencode($row['sub'])."&msg=  ".rawurlencode($row['msg']) ; ?> ">Forward</a></p>
+                                                    <p class="p-b-20">click here to <a href="<?php echo 'compose.php?id='.rawurlencode($smail)."&sub=@reply to :".rawurlencode($row['sub'])."&msg=@msg:".rawurlencode($row['msg']);echo "@" ; ?> ">Reply</a> or <a href="<?php echo 'compose.php?sub=  '.rawurlencode($row['sub'])."&msg=  ".rawurlencode($row['msg']) ; ?> ">Forward</a></p>
                                                 </div>
                                             </div>
                                         </div>

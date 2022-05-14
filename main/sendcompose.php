@@ -18,8 +18,9 @@ if(isset($_POST['send']))
     $sub=$_POST['sub'];
     $msg=$_POST['msg'];
     $file=$_FILES['file']['name'];
-
-            $fileName=$_FILES["file"]["name"];
+    if($file==""){}
+      else{
+         $fileName=$_FILES["file"]["name"];
             $fileSize=$_FILES["file"]["size"]/1024;
            
            // $fileType=$_FILES["file"]["type"];
@@ -28,7 +29,7 @@ if(isset($_POST['send']))
    
             $filenm= pathinfo($file);
             $fileType =$filenm['extension'];
-
+      }
 
 
 
